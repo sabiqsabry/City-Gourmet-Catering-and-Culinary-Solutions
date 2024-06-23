@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community & Events - City Solutions</title>
+
+    <!-- added the css page and other css useful tools-->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    
+    <header>
+
+        <!-- this is where the navbar-->
+
+        <a href="index.html" class="logo">Catering Solutions</a>
+
+        <ul class="navbar">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="community.html" class="active">Community & Events</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        
+        <!-- closing navbar section-->
+    
+    </header>
+
+    <!-- open Banner section -->
+
+    <section class="community-events-banner">
+        <div class="community-events-banner-content">
+            <h2 class="community-events-section-title">Community & Events</h2>
+        </div>
+    </section>
+
+    <!-- close Banner section -->
+
+    <!-- start Upcoming Events section -->
+
+    <section class="upcoming-events-section">
+        <h2 class="section-title">Upcoming Event</h2>
+        <div class="upcoming-events-container">
+            <!-- Upcoming Event Card -->
+            <div class="upcoming-event-card">
+                <img src="images/upcomingevent.jpg" alt="Upcoming Event Image" class="upcoming-event-image">
+                <div class="event-details">
+                    <h3>Summer Tasting Extravaganza</h3>
+                    <p>Date: June 25, 2024</p>
+                    <p>Time: 2:00 PM - 5:00 PM</p>
+                    <p>Location: Millennium Park, Chicago</p>
+                    <p>Join us for an afternoon of delightful flavors and culinary creativity. Sample a variety of gourmet dishes crafted by our talented chefs, featuring the best of seasonal and locally sourced ingredients. This event is perfect for food enthusiasts and those looking to explore new tastes.</p>
+                    <a href="contact.html" class="register-button">Register</a>
+                </div>
+            </div>
+        </div>
+    
+        <section class="past-events-section">
+            <h2 class="section-title">Past Events</h2>
+            <div class="past-events-container" id="past-events-container">
+                <!-- Past event cards will be dynamically inserted here -->
+            </div>
+        </section>
+        
+        <script src="past-events.js"></script>
+
+    </section>
+
+    <!-- close Upcoming Events section -->
+
+    <!-- latest recipe with tip of the day - open -->
+
+    <section class="latest-recipe-section">
+        <h2 class="section-title">Recipe of the Month</h2>
+        <div class="recipe-carddd">
+            <div class="recipe-video">
+                <!-- Embedded YouTube video -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XwuaIzdR46I" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="recipe-details">
+                <h3>Grilled Peach and Burrata Salad</h3>
+                <h3>Ingredients</h3>
+                <ol>
+                    <li>4 ripe peaches, halved and pitted</li>
+                    <li>8 ounces burrata cheese</li>
+                    <li>2 cups arugula</li>
+                    <li>1/4 cup balsamic glaze</li>
+                    <li>2 tablespoons extra virgin olive oil</li>
+                    <li>Salt and pepper to taste</li>
+                    <li>Optional: fresh basil leaves for garnish</li>
+                </ol>
+                <h3>Steps</h3>
+                <ol>
+                    <li>Preheat your grill to medium-high heat.</li>
+                    <li>Brush the cut side of the peaches with olive oil and season with salt and pepper.</li>
+                    <li>Place the peaches on the grill, cut side down, and cook for 3-4 minutes until grill marks form.</li>
+                    <li>Flip the peaches and cook for an additional 2-3 minutes until softened.</li>
+                    <li>Remove the peaches from the grill and let them cool slightly.</li>
+                    <li>Arrange the arugula on a serving platter.</li>
+                    <li>Tear the burrata cheese into pieces and scatter them over the arugula.</li>
+                    <li>Place the grilled peaches on top of the burrata.</li>
+                    <li>Drizzle the salad with balsamic glaze and a drizzle of olive oil.</li>
+                    <li>Season with additional salt and pepper to taste.</li>
+                    <li>Garnish with fresh basil leaves if desired.</li>
+                    <li>Serve immediately and enjoy this delicious summer salad!</li>
+                </ol>
+                <br>
+                <p>This Grilled Peach and Burrata Salad is the perfect combination of sweet and savory flavors, making it a refreshing and elegant dish for any occasion.</p>
+            </div>
+        </div>
+        <div class="tip-of-the-day">
+            <h3>Tip of the Day</h3>
+            <p></p>
+        </div>
+    </section>
+
+    <!-- latest recipe with tip of the day - close -->
+
+    <!-- previous recipe section - start -->
+
+    <section class="previous-recipes-section">
+        <h2 class="section-title">Previous Recipes</h2>
+        <div class="recipe-cards">
+            <!-- Recipe Card 1 -->
+            <div class="recipe-card">
+                <img src="images/margherita.png" alt="Recipe 1 Image">
+                <div class="recipe-info">
+                    <h3>Classic Margherita Pizza</h3>
+                    <p class="recipe-excerpt">Classic and simple, our Margherita Pizza recipe features a perfect balance of tangy tomato sauce, fresh mozzarella, and fragrant basil on a crisp, golden crust.</p>
+                    <a href="recipe1.html" class="read-more-button">Read More</a>
+                </div>
+            </div>
+    
+            <!-- Recipe Card 2 -->
+            <div class="recipe-card">
+                <img src="images/garlic chicken.png" alt="Recipe 2 Image">
+                <div class="recipe-info">
+                    <h3>Lemon Garlic Roasted Chicken</h3>
+                    <p class="recipe-excerpt">Succulent chicken marinated in zesty lemon and aromatic garlic, roasted to perfection for a mouthwatering culinary delight.</p>
+                    <a href="recipe2.html" class="read-more-button">Read More</a>
+                </div>
+            </div>
+
+            <!-- Recipe Card 3 -->
+            <div class="recipe-card">
+                <img src="images/salmon.png" alt="Recipe 3 Image">
+                <div class="recipe-info">
+                    <h3>Baked Salmon with Honey Mustard Glaze</h3>
+                    <p class="recipe-excerpt"> Tender salmon fillets baked to flaky perfection and coated in a sweet and tangy honey mustard glaze, creating a harmonious blend of flavors that will tantalize your taste buds..</p>
+                    <a href="recipe3.html" class="read-more-button">Read More</a>
+                </div>
+            </div>
+    
+            <!-- Add more recipe cards as needed -->
+        </div>
+    </section>
+
+    <!-- previous recipe section - close -->
+
+    <!-- book a session form - open -->
+
+    <section class="registration-form-section">
+        <div class="form-background"></div>
+        <div class="registration-form-container">
+            <h2 class="section-title">Book an Event</h2>
+            <form class="registration-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="event">Event Type</label>
+                    <select id="event" name="event" required>
+                        <option value="">Select Event Type</option>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Birthday Party">Birthday Party</option>
+                        <option value="Corporate Event">Corporate Event</option>
+                        <!-- Add more event types as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" name="guests" required>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Budget Range</label>
+                    <input type="text" id="budget" name="budget">
+                </div>
+                <div class="form-group">
+                    <label for="location">Event Location</label>
+                    <input type="text" id="location" name="location">
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- book a session form - close -->
+
+    <!-- start footer -->
+
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="footer-socials">
+                <a href="#" class="social-icon"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <ul class="footer-links">
+                <li><a href="services.html" class="footer-link">Services</a></li>
+                <li><a href="community.html" class="footer-link">Community & Events</a></li>
+                <li><a href="aboutus.html" class="footer-link">About Us</a></li>
+                <li><a href="contactus.html" class="footer-link">Contact Us</a></li>
+            </ul>
+            <p class="footer-copyright">© 2024 City Gourmet Catering & Culinary Solutions. All rights reserved by Amra Askar | CB010715</p>
+        </div>
+    </footer>
+
+    <!-- close footer -->
+</body>
+</html>

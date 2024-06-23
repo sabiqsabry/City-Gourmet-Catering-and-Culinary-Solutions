@@ -1,0 +1,30 @@
+[
+    {
+        "image": "images/bbq.png",
+        "title": "Summer BBQ Bash",
+        "date": "July 17, 2024",
+        "location": "Lakefront Park, Chicago",
+        "link": "#"
+    },
+    {
+        "image": "images/cocktail (2).png",
+        "title": "Cocktail Mixology Class",
+        "date": "August 5, 2024",
+        "location": "City Gourmet Kitchen, Downtown Chicago",
+        "link": "#"
+    },
+    {
+        "image": "images/truck.png",
+        "title": "Gourmet Food Truck Festival",
+        "date": "September 12, 2024",
+        "location": "Millennium Park, Chicago",
+        "link": "#"
+    },
+    {
+        "image": "images/sushi.png",
+        "title": "Sushi Making Masterclass",
+        "date": "October 15, 2024",
+        "location": "City Gourmet Kitchen, Downtown Chicago",
+        "link": "#"
+    }
+]

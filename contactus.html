@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - City Solutions</title>
+
+    <!-- added the css page and other css useful tools-->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+            // Company location
+            const companyLocation = [41.881832, -87.623177]; // Example: New York City
+
+            // Initialize the map
+            const map = L.map('map').setView(companyLocation, 13);
+
+            // Add OpenStreetMap tiles
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Add a marker for the company location
+            L.marker(companyLocation).addTo(map)
+                .bindPopup('Our Company Location')
+                .openPopup();
+
+            // Geolocation to get user's position
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const userLocation = [position.coords.latitude, position.coords.longitude];
+
+                        // Add a marker for the user's location
+                        L.marker(userLocation, {icon: L.icon({iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png', iconSize: [25, 41], iconAnchor: [12, 41]})}).addTo(map)
+                            .bindPopup('Your Location')
+                            .openPopup();
+
+                        // Adjust the map view to fit both markers
+                        const bounds = L.latLngBounds([companyLocation, userLocation]);
+                        map.fitBounds(bounds);
+                    },
+                    () => {
+                        alert("Geolocation failed. Please allow location access.");
+                    }
+                );
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        });
+
+    </script>
+
+</head>
+<body>
+    
+    <header>
+
+        <!-- this is where the navbar-->
+
+        <a href="index.html" class="logo">Catering Solutions</a>
+
+        <ul class="navbar">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="community.html">Community & Events</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html" class="active">Contact Us</a></li>
+        </ul>
+        
+        <!-- closing navbar section-->
+    
+    </header>
+
+    <!-- open banner -->
+
+    <section class="contact-us-banner">
+        <div class="contact-us-banner-content">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <!-- close banner -->
+
+    <!-- open contact form and map -->
+
+    <section class="contact-form-map">
+        <div class="contact-form-container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="number">Mobile:</label>
+                <input type="number" id="number" name="number" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="map-container">
+            <h2>Find Us</h2>
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <!-- close contact form and map -->
+
+    <!-- open 3 cards -->
+
+    <section class="contact-info-section">
+        <h2>Contact Information</h2>
+        <div class="contact-cards">
+            <div class="contact-card">
+                <h3>Address</h3>
+                <p>123 Catering Street<br>City, State, 12345</p>
+            </div>
+            <div class="contact-card">
+                <h3>Email</h3>
+                <p><a href="mailto:info@cateringbs.com">info@cateringbs.com</a></p>
+            </div>
+            <div class="contact-card">
+                <h3>Phone</h3>
+                <p>+1 (123) 456-7890<br>+1 (987) 654-3210</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- close 3 cards -->
+
+    <!-- start footer -->
+
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="footer-socials">
+                <a href="#" class="social-icon"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <ul class="footer-links">
+                <li><a href="services.html" class="footer-link">Services</a></li>
+                <li><a href="community.html" class="footer-link">Community & Events</a></li>
+                <li><a href="aboutus.html" class="footer-link">About Us</a></li>
+                <li><a href="contactus.html" class="footer-link">Contact Us</a></li>
+            </ul>
+            <p class="footer-copyright">© 2024 City Gourmet Catering & Culinary Solutions. All rights reserved by Amra Askar | CB010715</p>
+        </div>
+    </footer>
+
+    <!-- close footer -->
+    
+</body>
+</html>
